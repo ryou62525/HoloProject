@@ -36,6 +36,9 @@
       </uap:VisualElements>
     </Application>
   </Applications>
+  <Capabilities>
+    <uap2:Capability Name="spatialPerception" />
+  </Capabilities>
   <Extensions>
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
