@@ -5,14 +5,12 @@
 # Write a line equal to 'overwrite-all' (without quotes) to overwrite everything (preserved accross builds)
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
-HoloProject.sln: modified
+HoloProject.sln: 4A137F09A3D7802506E55FECABEA1992
 project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
-GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
-GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 HoloProject\App.cs: 3678DE6869E1AED3A6AF92DD9A1F15AA
-HoloProject\HoloProject.csproj: F832538609175927684B79B199D40ABB
+HoloProject\HoloProject.csproj: modified
 HoloProject\HoloProject.csproj.user: modified
-HoloProject\Package.appxmanifest: 1660809B62F7E99A1B63C1A1444E0852
+HoloProject\Package.appxmanifest: 1B736E5A06F125111546ED2BDD1B896C
 HoloProject\project.json: 1D02BC64BAC0D041019673A1C4C51737
 HoloProject\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
 HoloProject\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
@@ -20,13 +18,15 @@ HoloProject\Assets\Square44x44Logo.scale-200.png: 6C6EF27184ABE9D870A9D564953775
 HoloProject\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: 156637F7B5363E983E7A46D8E533A23D
 HoloProject\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
 HoloProject\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
-HoloProject\bin\x86\Release\AppX\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
-HoloProject\bin\x86\Release\AppX\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
-HoloProject\bin\x86\Release\AppX\Assets\Square44x44Logo.scale-200.png: 6C6EF27184ABE9D870A9D564953775DE
-HoloProject\bin\x86\Release\AppX\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: 156637F7B5363E983E7A46D8E533A23D
-HoloProject\bin\x86\Release\AppX\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
-HoloProject\bin\x86\Release\AppX\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
-HoloProject\bin\x86\Release\AppX\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
+HoloProject\bin\x86\Master\AppX\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
+HoloProject\bin\x86\Master\AppX\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
+HoloProject\bin\x86\Master\AppX\Assets\Square44x44Logo.scale-200.png: 6C6EF27184ABE9D870A9D564953775DE
+HoloProject\bin\x86\Master\AppX\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: 156637F7B5363E983E7A46D8E533A23D
+HoloProject\bin\x86\Master\AppX\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
+HoloProject\bin\x86\Master\AppX\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
+HoloProject\bin\x86\Master\AppX\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
+HoloProject\obj\x86\Debug\HoloProject.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
+HoloProject\obj\x86\Master\HoloProject.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
 HoloProject\obj\x86\Release\HoloProject.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
 HoloProject\Properties\AssemblyInfo.cs: 0159A9B29DF0C12BF46F4F7039078C8F
 HoloProject\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826

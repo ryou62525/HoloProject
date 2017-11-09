@@ -403,11 +403,23 @@
     <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\Data\StreamingAssets\Vuforia\Sample.xml">
+      <PackagePath>Data\StreamingAssets\Vuforia\Sample.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\PlaneFinding.dll">
       <PackagePath>PlaneFinding.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\VuforiaWrapper.dll">
+      <PackagePath>VuforiaWrapper.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\GpuTiming.dll">
+      <PackagePath>GpuTiming.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\SharingClient.dll">
       <PackagePath>SharingClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\Vuforia.dll">
+      <PackagePath>Vuforia.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\SpatialUnderstanding.dll">
       <PackagePath>SpatialUnderstanding.dll</PackagePath>
@@ -430,6 +442,9 @@
     <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\Data\resources.assets">
+      <PackagePath>Data\resources.assets</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
     </AppxPackagedFile>
@@ -445,6 +460,9 @@
     <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\Data\StreamingAssets\Vuforia\Sample.dat">
+      <PackagePath>Data\StreamingAssets\Vuforia\Sample.dat</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
@@ -457,6 +475,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
@@ -472,6 +493,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\Vuforia.UnityExtensions.dll">
+      <PackagePath>Vuforia.UnityExtensions.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\workspace\HoloProject\HoloProject\UWP\HoloProject\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>

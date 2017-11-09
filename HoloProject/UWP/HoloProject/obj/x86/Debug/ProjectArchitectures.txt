@@ -1,0 +1,1 @@
+C:\workspace\HoloProject\HoloProject\UWP\HoloProject\HoloProject.csproj;x86

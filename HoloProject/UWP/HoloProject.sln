@@ -1,13 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+# Visual Studio 14
+VisualStudioVersion = 14.0.22512.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloProject", "HoloProject\HoloProject.csproj", "{13A45C13-3265-47B8-BC48-A553B569DF55}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "C:\workspace\Unity\HoloProject\UWP\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj", "{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "C:\workspace\Unity\HoloProject\UWP\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj", "{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,47 +45,8 @@ Global
 		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x86.ActiveCfg = Release|x86
 		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x86.Build.0 = Release|x86
 		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x86.Deploy.0 = Release|x86
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Debug|ARM.ActiveCfg = Debug|ARM
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Debug|ARM.Build.0 = Debug|ARM
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Debug|x64.ActiveCfg = Debug|x64
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Debug|x64.Build.0 = Debug|x64
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Debug|x86.ActiveCfg = Debug|x86
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Debug|x86.Build.0 = Debug|x86
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Master|ARM.ActiveCfg = Master|ARM
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Master|ARM.Build.0 = Master|ARM
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Master|x64.ActiveCfg = Master|x64
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Master|x64.Build.0 = Master|x64
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Master|x86.ActiveCfg = Master|x86
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Master|x86.Build.0 = Master|x86
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Release|ARM.ActiveCfg = Release|ARM
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Release|ARM.Build.0 = Release|ARM
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Release|x64.ActiveCfg = Release|x64
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Release|x64.Build.0 = Release|x64
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Release|x86.ActiveCfg = Release|x86
-		{5EEDAC46-3CBF-484C-9D83-C34ABCA85BF0}.Release|x86.Build.0 = Release|x86
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Debug|ARM.ActiveCfg = Debug|ARM
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Debug|ARM.Build.0 = Debug|ARM
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Debug|x64.ActiveCfg = Debug|x64
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Debug|x64.Build.0 = Debug|x64
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Debug|x86.ActiveCfg = Debug|x86
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Debug|x86.Build.0 = Debug|x86
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Master|ARM.ActiveCfg = Master|ARM
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Master|ARM.Build.0 = Master|ARM
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Master|x64.ActiveCfg = Master|x64
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Master|x64.Build.0 = Master|x64
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Master|x86.ActiveCfg = Master|x86
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Master|x86.Build.0 = Master|x86
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Release|ARM.ActiveCfg = Release|ARM
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Release|ARM.Build.0 = Release|ARM
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Release|x64.ActiveCfg = Release|x64
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Release|x64.Build.0 = Release|x64
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Release|x86.ActiveCfg = Release|x86
-		{FA3407BF-7B21-42F7-BCA7-C77C1F0495D9}.Release|x86.Build.0 = Release|x86
-	EndGlobalSection
+ EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {69EA02DA-C2E3-4080-9678-D168706DFBF1}
 	EndGlobalSection
 EndGlobal

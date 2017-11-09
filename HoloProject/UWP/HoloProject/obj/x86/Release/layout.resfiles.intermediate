@@ -12,13 +12,20 @@ Data\level0
 Data\level0.resS
 Data\managedAssemblies.txt
 Data\nativePlugins.txt
+Data\resources.assets
 Data\Resources\unity default resources
 Data\Resources\unity_builtin_extra
 Data\sharedassets0.assets
 Data\sharedassets0.assets.resS
+Data\StreamingAssets\Vuforia\Sample.dat
+Data\StreamingAssets\Vuforia\Sample.xml
+GpuTiming.dll
+GpuTiming.pdb
 PlaneFinding.dll
 Properties\Default.rd.xml
 Resource.res
 SharingClient.dll
 SpatialUnderstanding.dll
 SpatialUnderstanding.pdb
+Vuforia.dll
+VuforiaWrapper.dll
