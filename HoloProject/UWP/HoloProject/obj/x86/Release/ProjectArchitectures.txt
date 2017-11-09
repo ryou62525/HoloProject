@@ -1,1 +1,1 @@
-C:\workspace\Unity\HoloProject\UWP\HoloProject\HoloProject.csproj;x86
+C:\workspace\HoloProject\HoloProject\UWP\HoloProject\HoloProject.csproj;x86

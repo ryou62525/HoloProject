@@ -11,8 +11,14 @@ Data\globalgamemanagers.assets
 Data\level0
 Data\level0.resS
 Data\managedAssemblies.txt
+Data\nativePlugins.txt
 Data\Resources\unity default resources
 Data\Resources\unity_builtin_extra
 Data\sharedassets0.assets
+Data\sharedassets0.assets.resS
+PlaneFinding.dll
 Properties\Default.rd.xml
 Resource.res
+SharingClient.dll
+SpatialUnderstanding.dll
+SpatialUnderstanding.pdb

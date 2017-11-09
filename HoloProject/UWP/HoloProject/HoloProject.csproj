@@ -174,6 +174,9 @@
     </Content>
     <Compile Include="UnityGenerated.cs">
     </Compile>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>.\Unprocessed\Assembly-CSharp.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>.\Unprocessed\UnityEngine.dll</HintPath>
     </Reference>
@@ -186,6 +189,8 @@
     <Reference Include="UnityEngine.Timeline">
       <HintPath>.\Unprocessed\UnityEngine.Timeline.dll</HintPath>
     </Reference>
+    <Content Include="PlaneFinding.dll" />
+    <Content Include="PlaneFinding.pdb" Condition="Exists('PlaneFinding.pdb')" />
     <Reference Include="nunit.framework">
       <HintPath>.\Unprocessed\nunit.framework.dll</HintPath>
     </Reference>
@@ -198,6 +203,10 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>.\Unprocessed\UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Content Include="SharingClient.dll" />
+    <Content Include="SharingClient.pdb" Condition="Exists('SharingClient.pdb')" />
+    <Content Include="SpatialUnderstanding.dll" />
+    <Content Include="SpatialUnderstanding.pdb" Condition="Exists('SpatialUnderstanding.pdb')" />
     <Content Include="Data\**" />
   </ItemGroup>
   <ItemGroup>
@@ -251,6 +260,20 @@
    </_GenerateAppxManifestDependsOn>
   </PropertyGroup>
 
+  <Target Name="BeforeResolveReferences" Condition="'$(BuildingProject)' == 'true'" > 
+        <Copy SourceFiles="$(ProjectDir)Plugins\$(PlatformShortName)\PlaneFinding.dll" DestinationFiles="$(ProjectDir)PlaneFinding.dll" />
+            <Delete Files="$(ProjectDir)PlaneFinding.pdb" Condition="Exists('$(ProjectDir)PlaneFinding.pdb')" />
+            <Delete Files="$(ProjectDir)PlaneFinding.dll.mdb" Condition="Exists('$(ProjectDir)PlaneFinding.dll.mdb')" />
+            <Copy SourceFiles="$(ProjectDir)Plugins\$(PlatformShortName)\PlaneFinding.pdb" DestinationFiles="$(ProjectDir)PlaneFinding.pdb" Condition="Exists('$(ProjectDir)Plugins\$(PlatformShortName)\PlaneFinding.pdb')" />
+        <Copy SourceFiles="$(ProjectDir)Plugins\$(PlatformShortName)\SharingClient.dll" DestinationFiles="$(ProjectDir)SharingClient.dll" />
+            <Delete Files="$(ProjectDir)SharingClient.pdb" Condition="Exists('$(ProjectDir)SharingClient.pdb')" />
+            <Delete Files="$(ProjectDir)SharingClient.dll.mdb" Condition="Exists('$(ProjectDir)SharingClient.dll.mdb')" />
+            <Copy SourceFiles="$(ProjectDir)Plugins\$(PlatformShortName)\SharingClient.pdb" DestinationFiles="$(ProjectDir)SharingClient.pdb" Condition="Exists('$(ProjectDir)Plugins\$(PlatformShortName)\SharingClient.pdb')" />
+        <Copy SourceFiles="$(ProjectDir)Plugins\$(PlatformShortName)\SpatialUnderstanding.dll" DestinationFiles="$(ProjectDir)SpatialUnderstanding.dll" />
+            <Delete Files="$(ProjectDir)SpatialUnderstanding.pdb" Condition="Exists('$(ProjectDir)SpatialUnderstanding.pdb')" />
+            <Delete Files="$(ProjectDir)SpatialUnderstanding.dll.mdb" Condition="Exists('$(ProjectDir)SpatialUnderstanding.dll.mdb')" />
+            <Copy SourceFiles="$(ProjectDir)Plugins\$(PlatformShortName)\SpatialUnderstanding.pdb" DestinationFiles="$(ProjectDir)SpatialUnderstanding.pdb" Condition="Exists('$(ProjectDir)Plugins\$(PlatformShortName)\SpatialUnderstanding.pdb')" />
+   </Target>
   <Target Name="ModifyAppXPackage" Condition="'$(BuildingProject)' == 'true'" > 
         <Message Importance="high" Text="UnityWSAPlayerDir &quot;$(UnityWSAPlayerDir)&quot;." />
         <Message Importance="high" Text="UnityProjectDir &quot;$(UnityProjectDir)&quot;." />
@@ -263,10 +286,18 @@
            <RemoveDebuggableAttribute>False</RemoveDebuggableAttribute>
         </PropertyGroup>
         <Message Importance="high" Text="Running AssemblyConverter..." />
-        <Exec Command="&quot;$(UnityWSAToolsDir)AssemblyConverter.exe&quot; -platform=uap -lock=&quot;$(ProjectDir)project.lock.json&quot; -bits=$(UnityBits) -configuration=$(Configuration) -removeDebuggableAttribute=$(RemoveDebuggableAttribute) -uwpsdk=$(TargetPlatformVersion) -path=&quot;.&quot; -path=&quot;$(UnityWSAPlayerDir)Players\UAP\dotnet\$(PlatformTarget)\$(Configuration)&quot; &quot;$(ProjectDir)UnityEngine.dll&quot; &quot;$(ProjectDir)UnityEngine.Analytics.dll&quot; &quot;$(ProjectDir)UnityEngine.Timeline.dll&quot; &quot;$(ProjectDir)nunit.framework.dll&quot; &quot;$(ProjectDir)UnityEngine.UI.dll&quot; &quot;$(ProjectDir)UnityEngine.HoloLens.dll&quot; &quot;$(ProjectDir)UnityEngine.Networking.dll&quot;" />
+        <Exec Command="&quot;$(UnityWSAToolsDir)AssemblyConverter.exe&quot; -platform=uap -lock=&quot;$(ProjectDir)project.lock.json&quot; -bits=$(UnityBits) -configuration=$(Configuration) -removeDebuggableAttribute=$(RemoveDebuggableAttribute) -uwpsdk=$(TargetPlatformVersion) -path=&quot;.&quot; -path=&quot;$(UnityWSAPlayerDir)Players\UAP\dotnet\$(PlatformTarget)\$(Configuration)&quot; &quot;$(ProjectDir)Assembly-CSharp.dll&quot; &quot;$(ProjectDir)UnityEngine.dll&quot; &quot;$(ProjectDir)UnityEngine.Analytics.dll&quot; &quot;$(ProjectDir)UnityEngine.Timeline.dll&quot; &quot;$(ProjectDir)nunit.framework.dll&quot; &quot;$(ProjectDir)UnityEngine.UI.dll&quot; &quot;$(ProjectDir)UnityEngine.HoloLens.dll&quot; &quot;$(ProjectDir)UnityEngine.Networking.dll&quot;" />
         <Message Importance="high" Text="AssemblyConverter done." />
         <Message Importance="high" Text="Modifying AppxPackagePayload" />
         <ItemGroup>
+            <AppxPackagePayload Remove="@(AppxPackagePayload)" Condition="'%(TargetPath)' == 'Assembly-CSharp.dll'" />
+            <AppxPackagePayload Include="$(ProjectDir)Assembly-CSharp.dll">
+                <TargetPath>Assembly-CSharp.dll</TargetPath>
+            </AppxPackagePayload>
+            <AppxPackagePayload Remove="@(AppxPackagePayload)" Condition="'%(TargetPath)' == 'Assembly-CSharp.pdb'" />
+            <AppxPackagePayload Include="$(ProjectDir)Assembly-CSharp.pdb">
+                <TargetPath>Assembly-CSharp.pdb</TargetPath>
+            </AppxPackagePayload>
             <AppxPackagePayload Remove="@(AppxPackagePayload)" Condition="'%(TargetPath)' == 'UnityEngine.dll'" />
             <AppxPackagePayload Include="$(ProjectDir)UnityEngine.dll">
                 <TargetPath>UnityEngine.dll</TargetPath>

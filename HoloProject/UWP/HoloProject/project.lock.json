@@ -15778,12 +15778,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\workspace\\Unity\\HoloProject\\UWP\\HoloProject\\HoloProject.csproj",
+      "projectUniqueName": "C:\\workspace\\HoloProject\\HoloProject\\UWP\\HoloProject\\HoloProject.csproj",
       "projectName": "HoloProject",
-      "projectPath": "C:\\workspace\\Unity\\HoloProject\\UWP\\HoloProject\\HoloProject.csproj",
-      "projectJsonPath": "C:\\workspace\\Unity\\HoloProject\\UWP\\HoloProject\\project.json",
+      "projectPath": "C:\\workspace\\HoloProject\\HoloProject\\UWP\\HoloProject\\HoloProject.csproj",
+      "projectJsonPath": "C:\\workspace\\HoloProject\\HoloProject\\UWP\\HoloProject\\project.json",
       "packagesPath": "C:\\Users\\ryou\\.nuget\\packages\\",
-      "outputPath": "C:\\workspace\\Unity\\HoloProject\\UWP\\HoloProject\\obj\\",
+      "outputPath": "C:\\workspace\\HoloProject\\HoloProject\\UWP\\HoloProject\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\ryou\\AppData\\Roaming\\NuGet\\NuGet.Config",

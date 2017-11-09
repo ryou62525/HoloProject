@@ -398,6 +398,8 @@
     <Compile Include="Assets\Assets\HoloToolkit\UX\Scripts\UICollection.cs" />
     <Compile Include="Assets\Assets\HoloToolkit-UnitTests\Input\TestEventHandler.cs" />
     <Compile Include="Assets\Assets\HoloToolkit-UnitTests\Utilities\ReflectionTestBehaviour.cs" />
+    <Compile Include="Assets\Assets\Scripts\TapSample.cs" />
+    <Compile Include="Assets\ResetScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Assets\HoloToolkit\Input\Shaders\Cursor.shader" />
