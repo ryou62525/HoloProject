@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="merker" size="10.000000 13.230769" />
+    <ImageTarget name="test" size="10.000000 14.139111" />
+    <ImageTarget name="ezypt" size="10.000000 14.189944" />
+    <ImageTarget name="neko" size="20.000000 30.000000" />
+    <ImageTarget name="IMG_1897" size="5.000000 3.151372" />
+    <ImageTarget name="sample2" size="50.000000 50.742214" />
+    <ImageTarget name="markerSample" size="50.000000 50.215984" />
+  </Tracking>
+</QCARConfig>

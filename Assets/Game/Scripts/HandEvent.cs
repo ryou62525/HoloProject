@@ -13,18 +13,20 @@ public class HandEvent : MonoBehaviour, ISourceStateHandler, IInputHandler
     //ハンドトラッキングの状態を保持する変数
     private bool _isDrag = false;
 
-    //線の描画に使用するポインターのGameObject
-    private GameObject _pointer = null;
+    //線の描画をするGameObject
+    private GameObject _lineObject = null;
 
-    //テンプレートとなるポインターオブジェクトを保持する変数
+    //_lineObjectを保存するList配列
+    private List<GameObject> _lineObjects = new List<GameObject>();
+
+    //LineRedererのコンポーネントを持ったオブジェクトを保持する変数
     [SerializeField]
-    private GameObject _pointerOrigin = null;
+    private GameObject _OriginObj = null;
 
-    private List<GameObject> _pointers = new List<GameObject>();
 
     private void Start()
     {
-        //このオブジェクトにジェスチャの通知させるために登録する
+        //ジェスチャ通知をこのオブジェクトに登録
         InputManager.Instance.PushFallbackInputHandler(gameObject);
     }
 
@@ -35,7 +37,7 @@ public class HandEvent : MonoBehaviour, ISourceStateHandler, IInputHandler
         {
             var pos = Vector3.zero;
             _currentInputSource.TryGetPointerPosition(_id, out pos);
-            _pointer.transform.position = pos;
+            _lineObject.transform.position = pos;
         }
     }
 
@@ -45,15 +47,14 @@ public class HandEvent : MonoBehaviour, ISourceStateHandler, IInputHandler
     /// <param name="eventData"></param>
     public void OnInputDown(InputEventData eventData)
     {
+        //手の位置を取得できるか確認する取得できない場合は終了
         if (!eventData.InputSource.SupportsInputInfo
-            (eventData.SourceId, SupportedInputInfo.Position))
-        {
-            return;
-        }
-
-        GameObject tmp = Instantiate(_pointerOrigin);
-        _pointer = tmp;
-        _pointers.Add(_pointer);
+            (eventData.SourceId, SupportedInputInfo.Position)) return;
+       
+        
+        var tmp = Instantiate(_OriginObj);
+        _lineObject = tmp;
+        _lineObjects.Add(_lineObject);
 
         _currentInputSource = eventData.InputSource;
         _id = eventData.SourceId;
@@ -67,8 +68,7 @@ public class HandEvent : MonoBehaviour, ISourceStateHandler, IInputHandler
     /// <param name="eventData"></param>
     public void OnInputUp(InputEventData eventData)
     {
-        _isDrag = false;
-        _pointer.GetComponent<MeshRenderer>().enabled = false;
+        Initialize();
         Debug.Log("Is UP");
     }
 
@@ -87,8 +87,18 @@ public class HandEvent : MonoBehaviour, ISourceStateHandler, IInputHandler
     /// <param name="eventData"></param>
     public void OnSourceLost(SourceStateEventData eventData)
     {
-        _isDrag = false;
+        Initialize();
         Debug.Log("手をロストしました");
     }
 
+    /// <summary>
+    /// 人差し指を上げた時と手をロストしたときに、
+    /// TraileRendererのコンポーネントを持ったオブジェクトの
+    /// パラメータなどを初期化する関数です。
+    /// </summary>
+    private void Initialize()
+    {
+        _isDrag = false;
+        _lineObject.GetComponent<MeshRenderer>().enabled = false;
+    }
 }

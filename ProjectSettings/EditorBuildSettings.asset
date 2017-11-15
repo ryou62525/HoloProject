@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Game/Scenes/Stage2.unity
+    path: Assets/Game/Scenes/HoloSample.unity
+    guid: e24dcd915bce4b74c9c2fb02458cb8ec
+  - enabled: 1
+    path: Assets/Game/Scenes/Debug.unity
+    guid: 096f32184eefea34ba573ac0c1ef1ebd
+  - enabled: 1
+    path: Assets/Game/Scenes/temp.unity
     guid: 9133492be4ae0bc4581566900129ce3c
   - enabled: 1
-    path: Assets/Game/Scenes/Stage1.unity
-    guid: e24dcd915bce4b74c9c2fb02458cb8ec
+    path: Assets/Game/Scenes/Holo&AR.unity
+    guid: 9e6bc01de61f29c40acac7db1b6da5f1
+  - enabled: 1
+    path: Assets/Game/Scenes/AROnly.unity
+    guid: 40616f4f85e9f7348a7202a59e009add

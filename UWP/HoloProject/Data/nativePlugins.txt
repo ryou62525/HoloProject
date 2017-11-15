@@ -1,4 +1,6 @@
 PlaneFinding.dll
+VuforiaWrapper.dll
 GpuTiming.dll
 SharingClient.dll
+Vuforia.dll
 SpatialUnderstanding.dll

@@ -7,7 +7,7 @@
 # Default behavior is to never overwrite files
 HoloProject.sln: 4A137F09A3D7802506E55FECABEA1992
 project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
-HoloProject\App.cs: 3678DE6869E1AED3A6AF92DD9A1F15AA
+HoloProject\App.cs: modified
 HoloProject\HoloProject.csproj: modified
 HoloProject\HoloProject.csproj.user: modified
 HoloProject\Package.appxmanifest: 1B736E5A06F125111546ED2BDD1B896C
@@ -28,5 +28,5 @@ HoloProject\bin\x86\Master\AppX\Properties\Default.rd.xml: 72EB282657164E79A1C42
 HoloProject\obj\x86\Debug\HoloProject.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
 HoloProject\obj\x86\Master\HoloProject.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
 HoloProject\obj\x86\Release\HoloProject.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
-HoloProject\Properties\AssemblyInfo.cs: 0159A9B29DF0C12BF46F4F7039078C8F
+HoloProject\Properties\AssemblyInfo.cs: modified
 HoloProject\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826

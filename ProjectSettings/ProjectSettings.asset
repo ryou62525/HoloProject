@@ -524,7 +524,7 @@ PlayerSettings:
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
-  metroCertificateNotAfter: 00707dc3e079d401
+  metroCertificateNotAfter: 00646247697bd401
   metroApplicationDescription: HoloProject
   wsaImages: {}
   metroTileShortName: 
